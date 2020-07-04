@@ -33,6 +33,7 @@ body{
 .brandLogo{
     position: absolute;
     left:5px;
+    top: 28px;
 }
 .header{
     display: flex;
@@ -93,14 +94,7 @@ body{
     padding:15px;
 
 }
-@media screen and (max-width:800px){
-    .productOverviewHats ,.productOverviewSneakers, .productOverviewJackets, .productOverviewMen ,.productOverviewWomen{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
-    }
-    
-}
+
 
  .title{
     position: absolute;
@@ -133,15 +127,30 @@ body{
     font-family: 'Yellowtail', cursive;
 
 }
+
 .Images{
     width:280px;
     height:300px;   
 }
 .Images:hover{
     opacity:0.8;
+    animation: zoomInOut .6s;
+
+    
     
 }
-
+@keyframes zoomInOut{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+        
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
 .ghost{
     
     position: absolute;
@@ -153,6 +162,9 @@ body{
     opacity:0.6;
     border: none;
     cursor: pointer;
+    animation:upsideDown .6s;
+
+    
 }
 .productContainer{
    display: flex;
@@ -173,7 +185,7 @@ body{
     transition: all .3s ease-in-out;
 }
 .itemImageDiv:hover{
-       transform: scale(1.1);
+    animation: zoomInOut .6s;
 }
 .productDescription{
     display: flex;
@@ -230,10 +242,21 @@ body{
     color: whitesmoke;
     box-shadow: 5px 5px rgba(0,0,0,0.3);
     border-radius: 10px;
+    font-family: 'Yellowtail', cursive;
+
     
 }
-.btn-cart:hover{
-    transform: translateY(-10px);
+.addLink:active{
+   animation:upsideDown .6s;
+}
+
+@keyframes upsideDown{
+    0%{
+        transform: translateY(-4px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .Homepage{
     position: absolute;
@@ -249,6 +272,8 @@ body{
     position: absolute;
     right: 10px;
     top: 25px;
+    color: red;
+    
 }
 .quantity{
     position: absolute;
@@ -298,4 +323,24 @@ body{
 }
 .toggleVisible{
     display: none;   
+}
+
+.hamburger{
+    display: none;
+}
+.line{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+@media screen and (max-width:800px){
+    .productOverviewHats ,.productOverviewSneakers, .productOverviewJackets, .productOverviewMen ,.productOverviewWomen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        width: 20%;
+    }
+    
 }
