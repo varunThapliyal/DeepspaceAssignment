@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-size: 62.5%;
+}
+.container{
+    position: relative;
+
+    
+}
+.brand{
+    background: linear-gradient(to right,#ff4b2b,#ff416c);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    
+    position: absolute;
+    top:35px;
+    left:50px;
+    font-size:30px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+   
+}
+.brand:hover{
+    border-bottom:1.5px solid red ;
+}
+.brandLogo{
+    position: absolute;
+    left:5px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    font-size:1.5rem;
+    transition:all .5s;
+    margin-bottom: 20px;
+
+}
+.product{
+   margin: 40px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: .2rem;
+   color:red;
+   
+}
+.product:hover{
+    border-bottom: 1.3px solid red;
+}
+
+.productOverviewHats{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    padding:15px;
+    
+}
+
+.productOverviewSneakers{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    padding:15px;
+
+}
+.productOverviewWomen{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    padding:15px;
+
+}
+.productOverviewJackets{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    padding:15px;
+
+}
+.productOverviewMen{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    padding:15px;
+
+}
+@media screen and (max-width:800px){
+    .productOverviewHats ,.productOverviewSneakers, .productOverviewJackets, .productOverviewMen ,.productOverviewWomen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    
+}
+
+ .title{
+    position: absolute;
+    left:50%;
+    top: 1.0rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transform: translate(-50%,-50%);
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+
+}
+.title:hover{
+    border-bottom: 1.3px solid rgb(35, 50, 138);
+}
+
+.preview{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    position: relative;
+}
+.productFooter{
+    display:flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-family: 'Yellowtail', cursive;
+
+}
+.Images{
+    width:280px;
+    height:300px;   
+}
+.Images:hover{
+    opacity:0.8;
+    
+}
+
+.ghost{
+    
+    position: absolute;
+    top:85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:60%;
+    height: 10%;
+    opacity:0.6;
+    border: none;
+    cursor: pointer;
+}
+.productContainer{
+   display: flex;
+   flex-direction: row;
+   padding: 30px;
+   position: relative;
+}
+.itemImage{
+     display: flex;
+     padding: 30px;
+     border-radius: 15px;
+     height:370px;
+     width: 350px;
+     
+}
+.itemImageDiv{
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.itemImageDiv:hover{
+       transform: scale(1.1);
+}
+.productDescription{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 30px;
+    line-height: 1.5;
+    justify-content: space-around;
+    position: relative;
+
+    
+}
+.productDefinition{
+    font-size: 15px;
+    font-family: 'Comic Neue', cursive;
+
+}
+.itemPrice{
+    font-size: 25px;
+    width: 22%;
+    text-align: center;
+    position: absolute;
+    top:10%;
+    right: 0;
+    color: green;
+}
+.itemHeading{
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 20px;
+    background: linear-gradient(to top right, #7E0F4B, #1A5865);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 22%;
+    text-align: center;
+}
+.itemHeading:hover{
+    border-bottom: 1.3px solid blueviolet;
+}
+.btn-cart{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 18px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    background-color:orangered;
+    
+    outline: none;
+    color: whitesmoke;
+    box-shadow: 5px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    
+}
+.btn-cart:hover{
+    transform: translateY(-10px);
+}
+.Homepage{
+    position: absolute;
+    text-decoration: none;
+    top:10px;
+    left:60px;
+    font-size: 15px;
+    color: slateblue;
+}
+.cartImage{
+    height:40px;
+    width:40px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+.quantity{
+    position: absolute;
+    right: 25px;
+    top:32px;
+    font-size: 15px;
+}
+.dropdown{
+    position: absolute;
+    z-index: 200;
+    right:14px;
+    display: flex;
+    flex-direction: column;
+    border:2px solid rgba(0,0,0,0.5);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top:60px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+.dropdownItem{
+    display: flex;
+    height:50px;
+    width: 200px;
+    position: relative;
+    margin: 10px;
+    
+}
+.prodImage{
+    height: 60px;
+    width: 50px;
+    padding:5px;
+    
+}
+
+.Pname{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+
+}
+.cartIcon{
+    cursor: pointer;
+}
+.toggleVisible{
+    display: none;   
+}
