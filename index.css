@@ -8,9 +8,7 @@ body{
     font-size: 62.5%;
 }
 .container{
-    position: relative;
-
-    
+    position: relative;   
 }
 .brand{
     background: linear-gradient(to right,#ff4b2b,#ff416c);
@@ -36,6 +34,8 @@ body{
     left:5px;
     top: 28px;
 }
+
+
 .header{
     display: flex;
     flex-direction: row;
@@ -62,7 +62,7 @@ body{
 .productOverviewHats{
     display: flex;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
     padding:15px;
     
 }
@@ -72,6 +72,7 @@ body{
     position: relative;
     margin-bottom: 30px;
     padding:15px;
+    
 
 }
 .productOverviewWomen{
@@ -79,6 +80,7 @@ body{
     position: relative;
     margin-bottom: 30px;
     padding:15px;
+    
 
 }
 .productOverviewJackets{
@@ -86,6 +88,7 @@ body{
     position: relative;
     margin-bottom: 30px;
     padding:15px;
+    
 
 }
 .productOverviewMen{
@@ -93,11 +96,14 @@ body{
     position: relative;
     margin-bottom: 30px;
     padding:15px;
+   
 
 }
 .itemsList{
     display:flex ;
+
 }
+
 
 
  .title{
@@ -328,65 +334,61 @@ body{
     display: none;   
 }
 
-.hamburger{
-    display: none;
-}
-.line{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
+
 
 
 
 @media screen and (max-width:1300px){
-    .header{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap:0;
+   
+    
+    .container{
+        width: 100%;
         
     }
-    .product{  
-        margin:10px;
-        width:20%
+    .products{  
+        margin:0 auto;
+        width:90%;
+        overflow: hidden;
     }
-    .itemsList{
-        flex-direction: column;
-         padding-top: 80px;
-         padding-left: 10px;
-    }
-    
-}
-@media screen and (max-width:1000px){
-   .productContainer{
-       flex-direction: column;
-       padding-left: 20px;
-   }
-   .itemImage{
-       padding-left:0;   
-       height: 300px;
-       width:250px; 
-   }
-   .Images{
-    width: 200px;
-    height: 250px;
-   }
-}
-
-@media screen and (max-width:800px){
     .productOverviewHats ,.productOverviewSneakers, .productOverviewJackets, .productOverviewMen ,.productOverviewWomen{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
-        width:40vw;   
-        
+        grid-template-columns: 1fr 1fr 1fr;       
     }
-    .Images{
-        width: 200px;
-        height: 250px;
+    .itemsList{
+         flex-direction: column;
+         padding-top: 30px;
+         text-align: center;
+    }
+    .product{
+        margin-top: 0;
+    }
+    .product:first-child{
+        padding-top:100px;
     }
     
 }
+@media screen and (max-width:1080px){
+    .container{
+        width: 100%;
+        
+    }
+    .products{  
+        
+        width:80%;
+        overflow: hidden;
+    }
+    .productOverviewHats ,.productOverviewSneakers, .productOverviewJackets, .productOverviewMen ,.productOverviewWomen{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .image{
+        overflow:hidden;
+    }
+    
+   
+     
+}
+
+
 
 
