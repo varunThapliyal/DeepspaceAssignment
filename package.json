@@ -7,7 +7,9 @@
     "require": "^2.4.20"
   },
   "devDependencies": {},
-  "scripts": {},
+  "scripts": {
+    "start":"node index.js"
+  },
   "author": "",
   "license": "ISC",
   "repository": {
