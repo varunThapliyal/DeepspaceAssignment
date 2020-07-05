@@ -1,11 +1,11 @@
 import PRODUCT_DATA from './productData.js';
 import itemData from './itemData.js';
-console.log(PRODUCT_DATA);
+
 
 
 
 const renderProduct=(product)=>{
-    console.log(product.title);
+    
     const markup=`<div class="productOverview${product.title}" id=${product.title}>
                       <h1 class="title">${product.title}</h1>    
                   </div>

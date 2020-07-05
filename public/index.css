@@ -338,16 +338,7 @@ body{
     margin: 6px 0;
 }
 
-@media screen and (max-width:800px){
-    .productOverviewHats ,.productOverviewSneakers, .productOverviewJackets, .productOverviewMen ,.productOverviewWomen{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
-        width:40vw;
-        
-    }
-    
-}
+
 
 @media screen and (max-width:1300px){
     .header{
@@ -373,7 +364,28 @@ body{
        padding-left: 20px;
    }
    .itemImage{
-       padding-left:0;    
+       padding-left:0;   
+       height: 300px;
+       width:250px; 
    }
-   
+   .Images{
+    width: 200px;
+    height: 250px;
+   }
 }
+
+@media screen and (max-width:800px){
+    .productOverviewHats ,.productOverviewSneakers, .productOverviewJackets, .productOverviewMen ,.productOverviewWomen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        width:40vw;   
+    }
+    .Images{
+        width: 200px;
+        height: 250px;
+    }
+    
+}
+
+

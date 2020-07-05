@@ -1,16 +1,22 @@
 {
   "name": "deepspace",
   "version": "1.0.0",
-  "description": "",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "dependencies": {
     "require": "^2.4.20"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunThapliyal/DeepspaceAssignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/varunThapliyal/DeepspaceAssignment/issues"
+  },
+  "homepage": "https://github.com/varunThapliyal/DeepspaceAssignment#readme",
+  "description": ""
 }
